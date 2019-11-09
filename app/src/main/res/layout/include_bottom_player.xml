@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/sizeBottomPlayer"
+    android:background="@color/colorBottomPlayer">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewRadioIcon"
+        android:layout_width="@dimen/sizeBottomPlayerIcon"
+        android:layout_height="@dimen/sizeBottomPlayerIcon"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/padding_16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/imageViewFavorite"
+        android:layout_toEndOf="@id/imageViewRadioIcon"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRadioTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radio Name"
+            android:textColor="@color/colorWhite" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRadioStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Playing"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewPlayPauseControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="@dimen/padding_16dp"
+        app:srcCompat="@drawable/ic_pause_24px"
+        app:tint="@color/colorWhite" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/imageViewPlayPauseControl"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:padding="@dimen/padding_16dp"
+        app:srcCompat="@drawable/ic_favorite_24px"
+        app:tint="@color/colorRed" />
+
+</RelativeLayout>
