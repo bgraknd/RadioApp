@@ -5,4 +5,8 @@
         <item>Radios</item>
         <item>Favorites</item>
     </string-array>
+
+    <string name="titlePopularStations">Popular Stations</string>
+    <string name="titleFromYourLocation">From Your Location</string>
+
 </resources>
